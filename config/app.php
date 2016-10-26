@@ -135,6 +135,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Illuminate\Notifications\NotificationServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -142,7 +143,8 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        Telegram\Bot\Laravel\TelegramServiceProvider::class
+        Telegram\Bot\Laravel\TelegramServiceProvider::class,
+        App\Providers\BroadcastServiceProvider::class
     ],
 
     /*
@@ -190,8 +192,8 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-        'Telegram'  => Telegram\Bot\Laravel\Facades\Telegram::class
-
+        'Telegram'  => Telegram\Bot\Laravel\Facades\Telegram::class,
+        'Notification' => Illuminate\Support\Facades\Notification::class
     ],
 
 ];
