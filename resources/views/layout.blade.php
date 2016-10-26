@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Laravel Telegram Chat Bot Tutorial and Live Demo. Send messages from browser to Telegram group.">
-    <meta name="author" content="Ivan Radunovic">
 
     <meta property="og:url" content="https://demo2.codingo.me/">
     <meta property="og:title" content="Laravel Telegram Chat Bot Live Demo | Codingo Tuts">
