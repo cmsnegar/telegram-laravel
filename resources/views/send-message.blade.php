@@ -12,7 +12,7 @@
     <title>Telegram & Laravel</title>
 
     <!-- Bootstrap core CSS -->
-    {!! HTML::style('css/bootstrap.min.css') !!}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -26,13 +26,14 @@
 <div class="container">
     <div class="row">
         <div class="col-md-6">
-            {!! Form::open(['url' => '/send-message', 'class' => 'form-signin']) !!}
+            <form action="/send-message" class="form-signin" method="post">
+                {{ csrf_field() }}
             <h2 class="form-signin-heading">Send Message as Telegram Bot</h2>
             <label for="inputText" class="sr-only">Message</label>
             <textarea name="message" type="text" id="inputText" class="form-control" placeholder="Message" required autofocus></textarea>
             <br />
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-            {!! Form::close() !!}
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Send Message</button>
+            </form>
             <br />
             @if(Session::has('message'))
                 <div class="alert alert-{{ Session::get('status') }} status-box">
@@ -47,6 +48,6 @@
 </div> <!-- /container -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-{!! HTML::script('/js/bootstrap.min.js') !!}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

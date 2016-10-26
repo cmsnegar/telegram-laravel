@@ -1,21 +1,14 @@
 <?php namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use Irazasyed\Telegram\Telegram;
-use Input;
+use Telegram\Bot\Laravel\Facades\Telegram;
 
 class TelegramController extends Controller {
 
-    protected $telegram;
-
-    public function __construct( Telegram $telegram )
-    {
-        $this->telegram = $telegram;
-    }
-
     public function getUpdates()
     {
-        $updates = $this->telegram->getUpdates();
+        $updates = Telegram::getUpdates();
         dd($updates);
     }
 
@@ -24,13 +17,13 @@ class TelegramController extends Controller {
         return view('send-message');
     }
 
-    public function postSendMessage()
+    public function postSendMessage(Request $request)
     {
         $rules = [
             'message' => 'required'
         ];
 
-        $validator = Validator::make(Input::all(), $rules);
+        $validator = Validator::make($request->all(), $rules);
 
         if($validator->fails())
         {
@@ -39,7 +32,10 @@ class TelegramController extends Controller {
                 ->with('message', 'Message is required');
         }
 
-        $this->telegram->sendMessage('-253307', Input::get('message'));
+        Telegram::sendMessage([
+            'chat_id' => env('GROUP_ID'),
+            'text' => $request->get('message')
+        ]);
 
         return redirect()->back()
             ->with('status', 'success')
