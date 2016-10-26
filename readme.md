@@ -1,6 +1,8 @@
-# Using Telegram Messenger for Laravel application notifications
+# Send Messages from Laravel to Telegram chat
 
 This project is related to tutorial from [Codingo Tuts].
+
+You can find Live Demo [here](https://demo2.codingo.me/).
 
 What is covered in this tutorial: 
 
@@ -9,8 +11,9 @@ What is covered in this tutorial:
     - Creating Telegram Group for receiving notifications
     - Obtaining group CHAT_ID
     - Sending messages
+    - Live Demo with ability to send messages to Telegram Group
     
 
-[Codingo Tuts]:http://tuts.codingo.me/using-telegram-messenger-for-laravel-application-notifications/
+[Codingo Tuts]:https://tuts.codingo.me/using-telegram-messenger-for-laravel-application-notifications/
 
 
