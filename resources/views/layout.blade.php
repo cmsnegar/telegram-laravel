@@ -9,11 +9,11 @@
     <meta name="description" content="Laravel Telegram Chat Bot Tutorial and Live Demo. Send messages from browser to Telegram group.">
     <meta name="author" content="Ivan Radunovic">
 
-    <meta property="og:url" content="https://tuts.codingo.me/using-telegram-messenger-for-laravel-application-notifications">
-    <meta property="og:title" content="Using Telegram Messenger for Laravel application notifications">
-    <meta property="og:description" content="Telegram is new messenger similar to Viber, WhatsApp and FB messenger in terms of features, but superior when it comes to security. It is using many security">
+    <meta property="og:url" content="https://demo2.codingo.me/">
+    <meta property="og:title" content="Laravel Telegram Chat Bot Live Demo | Codingo Tuts">
+    <meta property="og:description" content="Laravel Telegram Chat Bot Tutorial and Live Demo. Send messages from browser to Telegram group.">
     <meta property="og:image" content="https://tuts.codingo.me/wp-content/uploads/2015/07/telegram-messenger-800x405.jpg">
-    <meta property="og:site_name" content="Codingo Tuts">
+    <meta property="og:site_name" content="Codingo Demo">
     <meta property="og:image:type" content="image/png">
     <meta property="article:author" content="https://www.facebook.com/ivanradunovic" />
 
