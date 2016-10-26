@@ -8,9 +8,11 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Laravel Telegram Chat Bot Tutorial and Live Demo. Send messages from browser to Telegram group.">
 
-    <meta property="og:url" content="https://demo2.codingo.me/">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
     <meta property="og:title" content="Laravel Telegram Chat Bot Live Demo | Codingo Tuts">
     <meta property="og:description" content="Laravel Telegram Chat Bot Tutorial and Live Demo. Send messages from browser to Telegram group.">
+    <meta property="og:url" content="https://demo2.codingo.me/">
     <meta property="og:image" content="https://tuts.codingo.me/wp-content/uploads/2015/07/telegram-messenger-800x405.jpg">
     <meta property="og:site_name" content="Codingo Demo">
     <meta property="og:image:type" content="image/png">
