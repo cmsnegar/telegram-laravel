@@ -4,7 +4,7 @@
 
     <div class="jumbotron">
         <h1>Before you Send message</h1>
-        <p class="lead">Make sure you invite yourself to tutorial Telegram group first.<br /> Invite link: <a style="word-break: break-all;" href="https://telegram.me/joinchat/DuLA0wot_Gm_hzaxB_UzKg" target="_blank">https://telegram.me/joinchat/DuLA0wot_Gm_hzaxB_UzKg</a></p>
+        <p class="lead">Make sure you invite yourself to tutorial Telegram group first.<br /> Invite link: <a style="word-break: break-all;" href="{{ env('GROUP_INVITE_LINK') }}" target="_blank">{{ env('GROUP_INVITE_LINK') }}</a></p>
         <p>Without this you won't be able to see messages you send.</p>
         <p><a class="btn btn-lg btn-success" href="/send" role="button"><i class="fa fa-envelope"></i> Start Messaging</a></p>
     </div>
